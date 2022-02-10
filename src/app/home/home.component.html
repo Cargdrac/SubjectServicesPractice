@@ -1,4 +1,4 @@
-<div class="card-container">
+<!--<div class="card-container">
     <h4 class="card-header">Listado de mensajes</h4>
     <div class="card-body">
         <form (ngSubmit)="sendMessage()">
@@ -10,4 +10,21 @@
         
     </div>
     
-  </div>
+  </div>-->
+
+<div class="container">
+
+    <form (ngSubmit)="sendMessage()">
+        <div class="elements">
+            <label>
+                Message:
+            </label>
+            <input type="text" placeholder="Mensaje" name="message" [(ngModel)]="message"> 
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
+
+    <hr>
+
+
+</div>

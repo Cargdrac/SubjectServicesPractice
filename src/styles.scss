@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    font-size: large;
+}
+
+.container {
+    margin-top: 50px;
+    width: 600px;
+}
+
+form {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(194, 235, 218);
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.messages-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+      width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+      width: 300px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .container {
+      width: auto;
+    }
+}
+
+

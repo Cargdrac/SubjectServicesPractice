@@ -1,9 +1,11 @@
 <div class="container text-center">
     <router-outlet></router-outlet>
     <app-home ></app-home>
-    <ul>
-      <li *ngFor="let message of messages">
-          {{message.text}}
-      </li>
-  </ul>
+    <div class="messages-container">
+        <ul>
+            <li *ngFor="let message of messages">
+                {{ message.text }}
+            </li>
+        </ul>
+    </div>
   </div>
